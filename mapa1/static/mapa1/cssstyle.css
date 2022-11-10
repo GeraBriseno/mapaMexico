@@ -1,0 +1,91 @@
+h2 {
+    
+    color:green;
+    text-align:center;
+
+}
+
+#nombre_estado{
+
+    text-align:center
+
+}
+
+#container{
+
+    text-align:center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .box #divmapa {
+    width: 479.465px;
+    height: 294.115px;
+  }
+
+  .box #div-pop{
+    width: 300px;
+    height: 300px;
+  }
+
+  .box #div-pib{
+    width: 300px;
+    height: 300px;
+  }
+  
+  .box #div-escudo{
+    width:100px;
+    height:100px;
+  }
+
+  .box #div-botones{
+    justify-content: center;
+  }
+
+#divmapa{
+  text-align:center;
+}
+
+.boton{
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#boton-pop{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+#boton-pop:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#boton-pib{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+#boton-pib:hover {
+  background-color: #4CAF50;
+  color: white;
+}

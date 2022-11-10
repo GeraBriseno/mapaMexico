@@ -1,0 +1,73 @@
+//var svgObject = document.getElementById('svg-object').contentDocument;
+    //var svg = svgObject.getElementById('external-1');
+    //console.log(svgObject);
+    //var element = svgObject.getElementsAll();
+    //console.log(Object.entries(svgObject));
+
+
+
+
+    		<g
+   id="Campeche"
+   style="stroke:none;fill:#88bb88;fill-opacity:1"> <!-- Campech -->
+
+    		<path
+   fill-rule="evenodd"
+   clip-rule="evenodd"
+   fill="#88BB88"
+   stroke="#000000"
+   stroke-width="0.216"
+   d="M727.11,458.585     c1.872-1.224,3.888-2.16,4.464-2.232c0.576,0,1.224-0.504,1.44-1.08c0.288-0.576,0.504-0.648,0.504-0.144     c0.144,1.728-4.176,4.968-7.056,5.256l-2.88,0.288L727.11,458.585z"
+   id="CampecheIsland"
+   style="stroke:none;fill:#88bb88;fill-opacity:1" /> <!-- Campeche island -->
+		</g>
+
+
+
+        viewBox="0 0 869.198 591.173"
+
+   width="579.465px"
+   height="394.115px"
+
+
+    var received_data_densidad = JSON.parse(document.getElementById("datosdensidad").innerHTML);
+    
+    var datosden = received_data_densidad[element.id];
+
+    const labelsdensidad = ["1990","1995","2000","2005","2010","2015","2020",];
+
+    const datadensidad = {
+                labels: labelsdensidad,
+                datasets:[{
+                    label: "Densidad de Población 1990-2020",
+                    backgroundColor: 'rgb(70, 164, 111)',
+                    borderColor: 'rgb(70, 164, 111)',
+                    data: datosden,
+                }]
+            };
+
+    const configDensidad = {
+                type: 'line',
+                data: datadensidad,
+                options:{ 
+                    scales:{
+                        x:{
+                            ticks:{
+                                autoSkip:false,
+                                offset:true,
+                                fontSize:2,
+                            }
+                        }
+                    }                   
+                }
+            };
+
+    if (denChart) {
+                denChart.destroy();
+            };
+            denChart = new Chart(
+                document.getElementById('denChart'),
+                configDensidad
+                );
+    
+    //const rgb2hex = (rgb) => `#${rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/).slice(1).map(n => parseInt(n, 10).toString(16).padStart(2, '0')).join('')}`;

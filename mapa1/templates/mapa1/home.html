@@ -1,0 +1,55 @@
+
+<html>
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% load static %}
+
+<head>
+
+    <title>
+
+
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'mapa1/cssstyle.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'mapa1/jscript.js' %}"></script>
+    
+
+</head>
+
+<body>
+
+    <h2 id="titulo">Estados de México</h2>
+
+
+    <div class="box" id="div-escudo"><image id="escudo" width="100" height="100" src="static/mapa1/escudomx.png"></image></div>
+    
+
+    <script type="application/json" id="datospop">{{estadospop | safe}}</script>
+    <script type="application/json" id="datospib">{{estadospib | safe}}</script>
+
+    <div class="box">
+
+        <div  id="div-pop"> <canvas id="popChart" width="100" height="100"></canvas> </div>
+
+        <div  id="divmapa">
+            
+            <object id="svg-object" data="static/mapa1/Mexico.svg" type="image/svg+xml"></object>
+        
+        </div>
+
+        <div  id="div-pib"> <canvas id="pibChart" width="100" height="100"></canvas></div>
+ 
+    </div>
+    <div class="box" id="div-botones">
+        <button class="boton "id="boton-pop" onclick="poblacion()">Población</button>
+        <button class="boton" id="boton-pib" onclick="pib()">PIB</button>
+    </div>
+    
+</body>    
+  
+</html>
