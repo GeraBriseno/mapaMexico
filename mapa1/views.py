@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.core.serializers.json import DjangoJSONEncoder
-from .models import Poblacion, PIB, Densidad
+from .models import Poblacion, PIB
 #from .forms import CreateBookShelf
 from django.contrib.auth.models import User
 import json

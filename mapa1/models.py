@@ -46,16 +46,3 @@ class PIB(models.Model):
 
     def __str__(self):
         return f"{self.estado}"
-
-class Densidad(models.Model):
-    estado = models.CharField(_("estado"), max_length=50)
-    a1990 = models.FloatField(_("1990"))
-    a1995 = models.FloatField(_("1995"))
-    a2000 = models.FloatField(_("2000"))
-    a2005 = models.FloatField(_("2005"))
-    a2010 = models.FloatField(_("2010"))
-    a2015 = models.FloatField(_("2015"))
-    a2020 = models.FloatField(_("2020"))
-
-    def __str__(self):
-        return f"{self.estado}"
