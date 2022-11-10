@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+(%v%9dx0xmw4vohk0r-kk)xe7*dgmr0_-jod#5fceb=ax*mct
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mapamexicopobpib.herokuapp.com']
 
 
 # Application definition
