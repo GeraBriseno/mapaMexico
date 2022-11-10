@@ -52,6 +52,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS=['https://*.mapamexicopobpib.herokuapp.com']
+
 ROOT_URLCONF = 'mapa.urls'
 
 TEMPLATES = [
