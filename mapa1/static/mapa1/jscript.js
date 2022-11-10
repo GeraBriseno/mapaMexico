@@ -123,7 +123,7 @@ window.addEventListener("load", function() {
         
         estados.forEach(element => {
 
-            poblacion = received_data_pop[element.id][11].replace(/\s/g, '');
+            poblacion = received_data_pop[element.id][11]//.replace(/\s/g, '');
             
             if(poblacion > 6000000){
                 element.style.fill = colorg1;
