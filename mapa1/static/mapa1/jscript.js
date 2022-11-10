@@ -39,7 +39,7 @@ window.addEventListener("load", function() {
             //var received_data_pop = JSON.parse(document.getElementById("datospop").innerHTML);
             //var received_data_pib = JSON.parse(document.getElementById("datospib").innerHTML);
 
-            var datospop_r = received_data_pop[element.id];
+            var datospop = received_data_pop[element.id];
             //var datospop = datospop_r.map(function (x) { 
                 //return parseInt(x.replace(/\s/g, '')); 
             //});
