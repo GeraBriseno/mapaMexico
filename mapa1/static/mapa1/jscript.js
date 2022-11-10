@@ -40,9 +40,9 @@ window.addEventListener("load", function() {
             //var received_data_pib = JSON.parse(document.getElementById("datospib").innerHTML);
 
             var datospop_r = received_data_pop[element.id];
-            var datospop = datospop_r.map(function (x) { 
-                return parseInt(x.replace(/\s/g, '')); 
-            });
+            //var datospop = datospop_r.map(function (x) { 
+                //return parseInt(x.replace(/\s/g, '')); 
+            //});
             var datospib = received_data_pib[element.id];
             const labelspop = ['1910','1920','1930','1940','1950','1960','1970','1980','1990','2000','2010','2020'];
             const labelspib = ["2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020"];
