@@ -148,7 +148,8 @@ window.addEventListener("load", function() {
     b_pib.onclick = function(){
 
         estados.forEach(element => {
-            pib = received_data_pib[element.id][11];
+            
+            pib = received_data_pib[element.id][17];
 
             if(pib > 650000){
                 element.style.fill = colorg1;
